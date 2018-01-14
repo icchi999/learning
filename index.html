@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ZOO LOGICAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+     <!-- jquery読み込み　Ver.3.2.1 -->
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script>
+ 	 //共通パーツ読み込み
+ 	 $(function() {
+ 	 $("#header").load("header.html");
+ 	 $("#side").load("side.html");
+ 	 $("#footer").load("footer.html");
+ 	 });
+ 	</script>
+</head>
+
+<body>
+
+    //header.htmlの読み込み
+    <header id="header"></header>
+
+    //パンくずリスト
+    <div class="path">
+        <ol>
+            <li><a href="index.html">ホーム</a></li>
+            <li>動物園について</li>
+        </ol>
+    </div>
+
+    //コンテンツ
+    <img src="images/graphic1.png" alt="ペンギンのすみか">
+    <div class="contents_box">
+
+        <div class="main_box">
+            <div class="news">
+                <h1>お知らせ</h1>
+                <dl>
+                    <dt>2014年07月25日</dt>
+                    <dd>動物園にライオンがやってきます。</dd>
+                    <dt>2014年05月10日</dt>
+                    <dd>緊急企画『パンダ展』を開催します。</dd>
+                    <dt>2014年04月25日</dt>
+                    <dd>ゴールデンウィーク展『ペンギンのライフスタイル』を開催します。</dd>
+                </dl>
+            </div>
+        </div>
+
+        //side.htmlの読み込み
+        <div id="side"></div>
+
+    </div>
+
+    //footer.htmlの読み込み
+    <footer id="footer"></footer>
+
+</body>
+</html>
