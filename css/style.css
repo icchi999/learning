@@ -87,10 +87,44 @@ nav ul li.nav_contact a {
 	display: block;
 }
 
+.contact_image {
+    margin: 20px 0;
+}
+
 #footer {
     width: 860px;
     margin:0 auto;
     padding: 10px;
+}
+
+.back_arrow {
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+.back_page {
+    float: right;
+    margin:0;
+}
+
+.footer_box {
+    margin-top: 30px;
+    background-image: url("../images/bg_footer.png");
+    background-repeat: repeat-x;
+    height: 30px;
+    overflow: hidden;
+}
+
+.footer_box p {
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 80%;
+}
+
+.copyright {
+	text-align: center;
 }
 
 /* 基本レイアウト ここまで↑ */
