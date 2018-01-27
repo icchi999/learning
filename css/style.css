@@ -6,6 +6,24 @@ body {
     background-repeat: repeat-x;
     background-position: center top;
     color: #666666;
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+	line-height: 1.4;
+}
+
+p {
+	margin: 0;
+}
+img {
+	border: 0;
+}
+a {
+	color: #fa474d;
+}
+a:hover {
+	color: #fc9698;
 }
 
 #header {
@@ -43,6 +61,10 @@ nav ul li a {
     overflow: hidden;
 }
 
+nav ul li a:hover {
+    background-position: 0 -60px;
+}
+
 nav ul li.nav_about a {
     background-image: url("../images/nav1.png");
 }
@@ -64,6 +86,23 @@ nav ul li.nav_contact a {
     margin:0 auto;
 }
 
+.path ul {
+    padding: 0;
+}
+
+.path ul li {
+    display: inline;
+    list-style: none;
+}
+
+.path ul li::after {
+    content: '>';
+}
+
+.path ul li:last-child:after {
+    content: '';
+}
+
 .contents_box {
     width: 860px;
     margin:0 auto;
@@ -76,12 +115,29 @@ nav ul li.nav_contact a {
     float:left;
 }
 
+.main_box h2 {
+    margin: 0 0 20px 0;
+    padding: 10px 40px 10px 10px;
+    background-image:
+        url("../images/bg_h2_head.png"),
+        url("../images/bg_h2_bottom.png");
+    background-repeat:
+        no-repeat,
+        repeat-x;
+    background-position:
+        top,
+        bottom;
+    background-size: auto;
+    font-size: 150%;
+    color: #fff;
+}
+
 #side {
     width: 240px;
     float:right;
 }
 
-.contents_box:after {
+.contents_box::after {
     content: "";
 	clear: both;
 	display: block;
@@ -135,41 +191,20 @@ nav ul li.nav_contact a {
     text-align: center;
 }
 
-.news {
-    width: 100%;
-}
-
-.news h2 {
-    margin: 0 0 20px 0;
-    padding: 10px 40px 10px 10px;
-    background-image:
-        url("../images/bg_h2_head.png"),
-        url("../images/bg_h2_bottom.png");
-    background-repeat:
-        no-repeat,
-        repeat-x;
-    background-position:
-        top,
-        bottom;
-    background-size: auto;
-    font-size: 150%;
-    color: #fff;
-}
-
-.news dl {
+.main_box dl {
     width: 100%;
     list-style: none;
     padding-left: 0px;
 }
 
-.news dl dt {
+.main_box dl dt {
     padding: 15px 0;
     width: 150px;
     float: left;
     clear: left;
 }
 
-.news dl dd {
+.main_box dl dd {
     margin: 0;
     padding: 15px 100px 15px 150px;
     width: 300px;
@@ -180,16 +215,93 @@ nav ul li.nav_contact a {
 
 /* 「動物園について」ページ ここから↓ */
 
+.main_box h1 {
+    padding-bottom: 10px;
+    background-image:
+        url("../images/bg_h1_left.png"),
+        url("../images/bg_h1_bottom.gif");
+    background-repeat:
+        no-repeat,
+        repeat-x;
+    background-position:
+        top right,
+        bottom;
+    background-size: auto;
+}
+
+img.photo_right {
+    float: right;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
 /* 「動物園について」ページ ここまで↑ */
 
 /* 「ガイドのご案内」ページ ここから↓ */
+
+.guide_article table {
+    margin: 10px 0;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.guide_article table th {
+    background-color: #ffdd63;
+}
+
+.guide_article table tr:nth-child(2n+1) {
+    background-color: #eef8fa;
+}
+
+.guide_article table th, table td {
+    border: solid 1px #000;
+    padding: 10px 0;
+
+}
 
 /* 「ガイドのご案内」ページ ここまで↑ */
 
 /* 「人気の動物たち」ページ ここから↓ */
 
+.animals_table {
+    margin: 10px 0;
+}
+
+.animals_table p {
+    display: inline-block;
+    width: 255px;;
+    float: left;
+    padding: 10px;
+}
+
+img.animals_photo {
+    float: left;
+    margin: 0 10px 20px 0;
+}
+
 /* 「人気の動物たち」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
+
+form p {
+	margin-bottom: 30px;
+}
+form p:nth-last-child(2) {
+	margin-bottom: 7px;
+}
+form p:last-child {
+	margin-bottom: 0;
+}
+input, textarea {
+	margin-top: 7px;
+}
+textarea {
+	width: 420px;
+	height: 115px;
+	overflow-y: scroll;
+}
 
 /* 「お問い合わせ」ページ ここまで↑ */
