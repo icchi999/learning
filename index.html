@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <title>ZOO LOGICAL</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <!--<link rel="stylesheet" href="css/common.css">-->
      <!-- jquery読み込み　Ver.3.2.1 -->
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/slick.min.js"></script>
     <script>
  	 //共通パーツ読み込み
- 	 $(function() {
- 	 $("#header").load("header.html");
- 	 $("#side").load("side.html");
- 	 $("#footer").load("footer.html");
- 	 });
+    $(function() {
+    	$("#header").load("header.html");
+    	$("#side").load("side.html");
+     	$("#footer").load("footer.html");
+ 	});
  	</script>
+    <script>
+    $(function() {
+        $('.slider').slick({
+            centerMode: true,
+            centerPadding: '0%',
+            autoplaySpeed: 3000,
+            autoplay: true,
+            pauseOnHover: true,
+        });
+    })
+    </script>
 </head>
 
 <body>
     <div id="header"></div>
-    <h1 class="top_image">
-        <img src="images/graphic1.png" alt="ペンギンのすみか">
-    </h1>
+    <ul class="slider">
+        <li><img src="images/graphic1.png" alt="graphic1"></li>
+        <li><img src="images/graphic2.png" alt="graphic2"></li>
+        <li><img src="images/graphic3.png" alt="graphic3"></li>
+    </ul>
     <div class="contents_box">
         <div class="main_box">
             <h2>お知らせ</h2>
